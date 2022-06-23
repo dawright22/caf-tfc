@@ -1,13 +1,3 @@
-terraform {
-  cloud {
-    organization = "apj-azure"
-
-    workspaces {
-      name = "caf-fastrack"
-    }
-  }
-}
-
 module "caf" {
   source  = "aztfmod/caf/azurerm"
   version = "5.3.11"
